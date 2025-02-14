@@ -21,12 +21,25 @@
             console.log(length1);
             let string1_2 = string1.concat(string2);
             console.log(string1_2);
-            let newstring = str.replace("fun", "awesome");
+            let newstring = string2.replace("fun", "awesome");
             console.log(newstring);
             let name = "Alice"
             let age = 25
             let message = `Hello, my name is ${name} and I am ${age} years old.`
             console.log(message);
+
+            let currentDate = new Date();
+            console.log("Full Date:", currentDate);
+            let year = currentDate.getFullYear();
+            console.log("Year:", year);
+            let month = currentDate.getMonth() + 1;
+            console.log("Month:", month);
+            let dayOfWeekNumber = currentDate.getDay(); 
+            console.log("Day of the Week (num):", dayOfWeekNumber);
+            let weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+            let dayOfWeekName = weekdays[dayOfWeekNumber];
+            console.log("Day of the Week (day):", dayOfWeekName);
+
         </script>
     </body>
 </html>
