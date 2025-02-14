@@ -6,10 +6,15 @@
     <body>
         <h1>JavaScript Lab</h1>
         <script>
-            let classRoster = [Alice, Tom, Charlie, Diana, Evan]
+            let classRoster = ["Alice", "Tom", "Charlie", "Diana", "Evan"]
             let classRosterString = classRoster.toString();
             console.log(classRosterString);
-            
+            console.log(classRoster);
+            classRoster.push("Fiona");
+            classRoster.push("Nancy");
+            classRoster.shift();
+            console.log(classRoster);
+            console.log(classRoster.length);
         </script>
     </body>
 </html>
