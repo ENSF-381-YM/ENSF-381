@@ -15,6 +15,40 @@
             classRoster.shift();
             console.log(classRoster);
             console.log(classRoster.length);
+
+            let classInfo = {
+                className: "ENSF381: Full-Stack Web Development",
+                instructor: "Dr. Smith",
+                students: classRoster,
+                details: {
+                    semester: "Winter",
+                    year: 2025
+                }
+            };
+
+            classInfo.schedule = ["Monday", "Wednesday", "Friday"];
+            classInfo.instructor = "Dr. Abdellatif"; 
+
+            console.log("Class Name:", classInfo.className);
+            console.log("Instructor:", classInfo.instructor);
+            console.log("Students:", classInfo.students);
+            console.log("Semester:", classInfo.details.semester);
+            console.log("Updated classInfo Object:", classInfo);
+
+            const { className, students } = classInfo;
+            console.log("Destructured Class Name:", className);
+            console.log("Destructured Students:", students);
+
+            const { semester, year } = classInfo.details;
+            console.log("Destructured Semester:", semester);
+            console.log("Destructured Year:", year);
+
+            const [student1, student2, ...remainingStudents] = students;
+
+            console.log("Student 1:", student1);
+            console.log("Student 2:", student2);
+            console.log("Remaining Students:", remainingStudents);
+
         </script>
     </body>
 </html>
