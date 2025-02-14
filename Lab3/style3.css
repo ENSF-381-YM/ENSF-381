@@ -1,0 +1,89 @@
+.Container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.item {
+    flex: 1;
+    padding: 20px;
+    margin: 5px;
+    background-color: lightblue;
+    border: 2px solid darkblue;
+    text-align: center;
+    min-width: 200px;
+}
+
+.item img {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 0 auto 10px;
+}
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #222;
+    padding: 15px;
+    list-style: none;
+    margin: 0;
+}
+
+.navbar li {
+    position: relative;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    padding: 12px 20px;
+    display: block;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+.navbar:hover {
+    background-color: #333;
+}
+.navbar a:hover {
+    background-color: #bdbbbb;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    background-color: white; 
+    list-style: none;
+    width: 180px;
+    text-align: center;
+    padding: 0;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+.dropdown-menu li {
+    border-bottom: 1px solid #ccc;
+}
+
+.dropdown-menu li:last-child {
+    border-bottom: none;
+}
+
+.dropdown-menu li a {
+    padding: 10px;
+    color: black;
+    display: block;
+    background-color: white;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #bdbbbb;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
