@@ -51,6 +51,27 @@ def main():
     print("The word that occurs most is: " + str(res))
     print("No of times: " + str(freq))
 
+    longest_paragraph = ""
+    max_word_count = 0
+
+    for p in paragraphs:
+        text = p.get_text().strip()
+        words = text.split()
+        
+        if len(words) < 5:
+            continue
+        
+        if len(words) > max_word_count:
+            max_word_count = len(words)
+            longest_paragraph = text
+
+    if longest_paragraph:
+        print("\nLongest Paragraph:")
+        print(longest_paragraph)
+        print(f"\nNumber of words: {max_word_count}")
+    else:
+        print("No paragraph found with at least 5 words.")
+
 
     labels = ['Headings', 'Links', 'Paragraphs']
     values = [num_headings, num_links, num_paragraphs]
