@@ -38,9 +38,9 @@ def main():
     freq = 0
     res = ""
 
-    for i in range(0, len(words), 1):
+    for i in range(0, len(words)):
         count = 0
-        for j in range(i + 1, len(words), 1):
+        for j in range(i + 1, len(words)):
             if words[j] == words[i]:
                 count += 1
 
